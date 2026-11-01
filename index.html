@@ -283,12 +283,30 @@ window.SHOPS = {
   const SHOP_DINEIN = {
     label: "店里怎么样",
     items: [
-      { id: "clean", text: "环境干净", phrases: ["店里干净敞亮", "环境收拾得很利索"] },
-      { id: "seat", text: "座位舒服", phrases: ["座位舒服，不挤", "坐着挺自在"] },
-      { id: "fast", text: "上菜快", phrases: ["上菜很快", "点完没多久就上了"] },
-      { id: "service", text: "服务热情", phrases: ["店员服务很热情", "招呼得很周到"] },
-      { id: "easyFind", text: "位置好找", phrases: ["位置好找", "交通挺方便"] },
-      { id: "group", text: "适合聚餐", phrases: ["挺适合朋友聚餐", "带家里人来也合适"] },
+      { id: "clean", text: "环境干净", phrases: [
+        "店里干净敞亮", "环境收拾得很利索", "桌面地面都是干净的", "店里清清爽爽的",
+        "卫生看着就放心", "比想象中干净", "没什么油腻感",
+      ] },
+      { id: "seat", text: "座位舒服", phrases: [
+        "座位舒服，不挤", "坐着挺自在", "桌椅宽敞，坐得住", "位子不挤，聊得开",
+        "坐着不憋屈", "座位间距也还行", "椅子坐着不硌人",
+      ] },
+      { id: "fast", text: "上菜快", phrases: [
+        "上菜很快", "点完没多久就上了", "出餐挺利索", "没等多久菜就齐了",
+        "上菜速度没得挑", "催都没催就上齐了", "等菜的时间很短",
+      ] },
+      { id: "service", text: "服务热情", phrases: [
+        "店员服务很热情", "招呼得很周到", "老板人挺和气", "有问必答，态度好",
+        "加汤加水很主动", "不催不赶，吃得踏实", "招呼得让人舒服",
+      ] },
+      { id: "easyFind", text: "位置好找", phrases: [
+        "位置好找", "交通挺方便", "地图一搜就到", "门口就是公交站",
+        "停车也还算方便", "街边一眼能看到", "不绕路，跟着导航就到",
+      ] },
+      { id: "group", text: "适合聚餐", phrases: [
+        "挺适合朋友聚餐", "带家里人来也合适", "人多也坐得下", "三五个人来吃正合适",
+        "适合下班一起聚", "一桌人吃热闹", "请客也不掉面儿",
+      ] },
     ],
   };
 
@@ -296,12 +314,30 @@ window.SHOPS = {
   const SHOP_WAIMAI = {
     label: "外卖怎么样",
     items: [
-      { id: "wpack", text: "包装干净", phrases: ["包装很干净", "打包得挺利索"] },
-      { id: "wfast", text: "送得快", phrases: ["送得挺快", "下单没多久就到了"] },
-      { id: "whot", text: "到手还热乎", phrases: ["到手还是热的", "汤都没凉"] },
-      { id: "wfull", topic: "portion", text: "给得实在", phrases: ["分量给得实在", "一份能吃饱"] },
-      { id: "wclean", text: "没洒汤", phrases: ["汤一点没洒", "没弄得到处都是"] },
-      { id: "wprice", topic: "value", text: "价格合适", phrases: ["这个价挺合适", "比堂食还划算"] },
+      { id: "wpack", text: "包装干净", phrases: [
+        "包装很干净", "打包得挺利索", "盒子没漏没压", "包装看着就卫生",
+        "汤和菜是分开放的", "袋子拎着不脏手", "封口封得挺严",
+      ] },
+      { id: "wfast", text: "送得快", phrases: [
+        "送得挺快", "下单没多久就到了", "比预估时间还早", "高峰期也没拖",
+        "差不多半小时就到", "送餐速度在线", "骑手来得很准时",
+      ] },
+      { id: "whot", text: "到手还热乎", phrases: [
+        "到手还是热的", "汤都没凉", "打开还冒热气", "到手里温度刚好",
+        "一点没凉透", "热乎得跟刚出锅似的", "还烫手",
+      ] },
+      { id: "wfull", topic: "portion", text: "给得实在", phrases: [
+        "分量给得实在", "一份能吃饱", "菜量比堂食还足", "一个人吃撑了",
+        "肉给得不抠", "一大盒实打实", "盖不上盖的那种足",
+      ] },
+      { id: "wclean", text: "没洒汤", phrases: [
+        "汤一点没洒", "没弄得到处都是", "汤汁一点没漏", "到手还是整整齐齐",
+        "没洒没漏没压扁", "打开干干净净", "袋子也是清爽的",
+      ] },
+      { id: "wprice", topic: "value", text: "价格合适", phrases: [
+        "这个价挺合适", "比堂食还划算", "用完券更值", "人均不高，吃得好",
+        "价格挺良心", "花这个钱不心疼", "算下来一餐很便宜",
+      ] },
     ],
   };
 
@@ -309,43 +345,88 @@ window.SHOPS = {
     food: {
       label: "吃得怎么样",
       items: [
-        { id: "taste", topic: "taste", text: "味道好", phrases: ["菜品味道很在线", "口味挺惊喜的", "吃着是真香"] },
-        { id: "portion", text: "分量足", phrases: ["分量给得足", "一份下去就饱了"] },
-        { id: "fresh", text: "食材新鲜", phrases: ["食材新鲜，吃着放心", "用料挺实在"] },
-        { id: "local", topic: "taste", text: "口味地道", phrases: ["口味很地道", "就是本地那个味道"] },
-        { id: "value", text: "性价比高", phrases: ["价格实惠，性价比很高", "人均不高但吃得很满足"] },
-        { id: "signature", text: "招牌菜值得点", phrases: ["招牌菜值得点", "点的几样都没踩雷"] },
+        { id: "taste", topic: "taste", text: "味道好", phrases: [
+          "菜品味道很在线", "口味挺惊喜的", "吃着是真香", "味道很正",
+          "调味不重不淡，刚刚好", "味道比想象中好", "一口下去就知道对了", "越吃越想吃",
+        ] },
+        { id: "portion", text: "分量足", phrases: [
+          "分量给得足", "一份下去就饱了", "菜量不小", "两个人点两份都吃不完",
+          "肉菜都给得实在", "端上来是满满一盘", "吃到最后还剩一点",
+        ] },
+        { id: "fresh", text: "食材新鲜", phrases: [
+          "食材新鲜，吃着放心", "用料挺实在", "菜是现做的", "青菜还是脆的",
+          "肉不柴也不散", "汤底能喝出是熬出来的", "没有那种放久了的味儿",
+        ] },
+        { id: "local", topic: "taste", text: "口味地道", phrases: [
+          "口味很地道", "就是本地那个味道", "调料是本地那一口", "吃着像本地人开的",
+          "跟老家那口对得上", "有老街那家老店的味儿", "这口很对本地的胃口",
+        ] },
+        { id: "value", text: "性价比高", phrases: [
+          "价格实惠，性价比很高", "人均不高但吃得很满足", "这个价位算良心", "花得不多，吃得挺值",
+          "比同价位的都强", "不贵，还能吃好", "这个价能吃成这样不错了",
+        ] },
+        { id: "signature", text: "招牌菜值得点", phrases: [
+          "招牌菜值得点", "点的几样都没踩雷", "照着招牌点不会错", "招牌那道确实有东西",
+          "盲点也不翻车", "几道招牌都站得住", "招牌点完还想再点",
+        ] },
       ],
     },
     shop: shop.channel === "waimai" ? SHOP_WAIMAI : SHOP_DINEIN,
   };
 
+  const DINEIN_OPENERS = [
+    "今天过来吃的", "下班顺便来吃的", "周末和朋友来吃的", "第一次来这家",
+    "路过进来试的", "带家里人来的", "同事推荐来吃的", "晚上过来吃的",
+    "中午就近吃的", "朋友带我来吃的", "慕名过来的", "刚好在附近过来吃的",
+    "天冷了想吃口热的", "临时找的一家", "第二次来了", "跟对象一起来的",
+    "一个人来吃的", "加班完过来吃的", "老客了又来的", "听说开了挺久来试试",
+    "朋友说这家不错就来了", "晚饭没想好随便进的", "路过好几次第一次进", "想吃这口就来了",
+  ];
+
   const WAIMAI_OPENERS = [
     "这次点的外卖", "点过好几次了", "第一次点这家", "同事推荐点的",
-    "加班点的这顿", "一个人不知道吃啥",
+    "加班点的这顿", "一个人不知道吃啥", "下雨懒得出门点的", "中午拼单点的",
+    "看评分点的", "半夜饿了点的", "第二次点了", "朋友推的这家",
+    "试了试新店", "顺手点的一家", "办公室一起点的", "想吃口热的就点了",
+    "天冷在家点的", "常点的一家", "换了家试试", "赶时间随便点的",
   ];
 
   const OPENERS = shop.channel === "waimai" ? WAIMAI_OPENERS : DINEIN_OPENERS;
 
   // 正文以「吃」开头时换一套开头，免得「…来吃的，吃着是真香」
-  const DINEIN_PLAIN = ["今天过来的", "下班顺路过来的", "周末过来的", "头一次来这儿"];
-  const WAIMAI_PLAIN = ["这一单", "这次", "今天这顿"];
+  const DINEIN_PLAIN = [
+    "今天过来的", "下班顺路过来的", "周末过来的", "头一次来这儿",
+    "中午过来的", "晚上过来的", "朋友带我来的", "路过进来的",
+    "刚好在附近", "这次过来", "老客过来", "第二次过来",
+  ];
+  const WAIMAI_PLAIN = ["这一单", "这次", "今天这顿", "今晚这顿", "中午这顿", "这一份"];
 
   const OPENERS_PLAIN = shop.channel === "waimai" ? WAIMAI_PLAIN : DINEIN_PLAIN;
 
-  const CONNECT = ["，", "，而且", "，另外", "，加上", "，"];
+  const CONNECT = ["，", "，", "，", "，而且", "，另外", "，加上", "，还有",
+                   "，关键是", "，最难得的是", "，更难得的是"];
 
   const BRIDGES = shop.channel === "waimai"
-    ? ["吃下来挺舒服", "跟店里一个味儿", "整体没什么可挑的"]
-    : ["吃下来挺舒服", "整体感觉不错", "没什么可挑的", "分量和味道都对得上"];
+    ? ["吃下来挺舒服", "跟店里一个味儿", "整体没什么可挑的", "比预期好",
+       "送来的样子挺整", "这份没让人失望", "各方面都挺稳"]
+    : ["吃下来挺舒服", "整体感觉不错", "没什么可挑的", "分量和味道都对得上",
+       "这顿吃得挺踏实", "比预期好", "各方面都挺稳", "该有的都有",
+       "挑不出什么毛病", "吃完心情挺好"];
 
   const CLOSINGS = shop.channel === "waimai"
-    ? ["下次还点。", "这个价，值了。", "没踩雷，放心点。", "会回购。", "整体挺满意。", "推荐试试。"]
+    ? ["下次还点。", "这个价，值了。", "没踩雷，放心点。", "会回购。", "整体挺满意。",
+       "推荐试试。", "已经加收藏了。", "下次再点一份。", "值这个价，推荐点。",
+       "会推荐给同事。", "这单点得不亏。", "以后常点。", "还想再点。",
+       "没让人失望。", "认这家了。", "会存进收藏。"]
     : ["整体挺满意，会再来。", "下次还想来。", "值这个价，推荐试试。",
-       "没踩雷，可以放心来。", "吃得挺舒服，会回购。", "总的来说不亏。"];
+       "没踩雷，可以放心来。", "吃得挺舒服，会回购。", "总的来说不亏。",
+       "会带朋友再来。", "值得专门跑一趟。", "这个价，挺值。", "还想再来吃一次。",
+       "朋友问起我会推荐。", "以后路过还会来。", "这顿吃得很满足。", "认了，会成为常客。",
+       "整体没毛病。", "推荐给同城的朋友。"];
 
   const picked = new Set();
   const pick = (arr) => arr[(Math.random() * arr.length) | 0];
+  const shuffle = (arr) => arr.slice().sort(() => Math.random() - 0.5);
   const MAX_PICK = 3;
 
   /* ---------------- 渲染 chips ---------------- */
@@ -385,12 +466,23 @@ window.SHOPS = {
   /* ---------------- 生成草稿 ---------------- */
   const draftEl = document.getElementById("draft");
 
+  // 最近用过的开头/收尾，连着点「换一句」时不会一直撞同一句
+  const recentOpen = [];
+  const recentClose = [];
+  function pickFresh(arr, recent) {
+    for (let i = 0; i < 6; i++) {
+      const v = pick(arr);
+      if (!recent.includes(v)) return v;
+    }
+    return pick(arr);
+  }
+
   function compose() {
     const chosen = allItems.filter((i) => picked.has(i.id));
     if (!chosen.length) return;
 
     // 一段话，最多用 3 个点（选的时候已经限住了）—— 再长就写成清单了
-    const chosen3 = chosen.slice().sort(() => Math.random() - 0.5).slice(0, MAX_PICK);
+    const chosen3 = shuffle(chosen).slice(0, MAX_PICK);
     // 同一个话题只留一句（「味道好」和「口味地道」是同一个话题）
     const seenTopic = new Set();
     const parts = [];
@@ -402,23 +494,65 @@ window.SHOPS = {
     }
     if (!parts.length) parts.push(pick(chosen3[0].phrases));
 
-    const conns = CONNECT.slice().sort(() => Math.random() - 0.5);
-    let body = parts[0];
-    for (let i = 1; i < parts.length; i++) body += conns[i - 1] + parts[i];
+    const closing = pickFresh(CLOSINGS, recentClose);
 
-    const closing = pick(CLOSINGS);
-    const opener = body.startsWith("吃") ? pick(OPENERS_PLAIN) : pick(OPENERS);
-    let text = opener + "，" + body + "。";
+    // 四种写法轮着来，句子的骨架不至于每次都一样
+    function render(list) {
+      const conns = shuffle(CONNECT);
+      let body = list[0];
+      for (let i = 1; i < list.length; i++) body += conns[i - 1] + list[i];
+      const op = body.startsWith("吃") ? pickFresh(OPENERS_PLAIN, recentOpen) : pickFresh(OPENERS, recentOpen);
+      const shape = Math.random();
+      let t;
+      if (shape < 0.50) {
+        t = op + "，" + body + "。";            // 开头 + 一段
+      } else if (shape < 0.66) {
+        t = body + "。";                         // 直接从感受说起
+      } else if (shape < 0.84 && list.length >= 2) {
+        // 拆成两句：第一句说一半，第二句接着补
+        const cut = 1 + ((Math.random() * (list.length - 1)) | 0);
+        const head = list.slice(0, cut).join(conns[0] || "，");
+        const tail = list.slice(cut).join(conns[1] || "，");
+        t = op + "，" + head + "。" + tail + "。";
+      } else {
+        t = op + "，" + body + "。";
+      }
+      return { t, body, op };
+    }
 
-    // 只选了 1-2 个点时，补一句缓和，读起来不那么硬
-    if (chosen.length <= 2 && Math.random() < 0.6) {
+    // 长了就少说一个点，别让客人读一大段
+    let list = parts.slice();
+    let r = render(list);
+    while (r.t.length > 36 && list.length > 1) {
+      list.pop();
+      r = render(list);
+    }
+    let text = r.t;
+
+    // 一句到底时补半句缓和，读起来不那么硬
+    const sentences = text.split("。").filter(Boolean).length;
+    if (sentences === 1 && ((chosen.length <= 2 && Math.random() < 0.6) || Math.random() < 0.3)) {
       for (let i = 0; i < 3; i++) {
         const bridge = pick(BRIDGES);
-        if (!shareWord(bridge, closing)) { text += bridge + "。"; break; }
+        if (!shareWord(bridge, closing) && !text.includes(bridge)) {
+          if ((text + bridge).length + closing.length <= 48) text += bridge + "。";
+          break;
+        }
       }
     }
 
-    text += closing;
+    // 偶尔用感叹号收尾，别全都一个调子
+    text += Math.random() < 0.10 ? closing.replace("。", "！") : closing;
+
+    if (text.length > 50) text = r.op + "，" + r.body + "。" + closing;
+    if (text.length > 50) text = r.body + "。" + closing;
+    const opener = r.op;
+
+    recentOpen.push(opener);
+    recentClose.push(closing);
+    if (recentOpen.length > 6) recentOpen.shift();
+    if (recentClose.length > 6) recentClose.shift();
+
     draftEl.value = text;
     updateCounter();
   }
@@ -651,6 +785,8 @@ window.SHOPS = {
 </script>
 </body>
 </html>
+
+
 
 
 
